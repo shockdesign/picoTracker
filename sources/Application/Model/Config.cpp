@@ -30,7 +30,8 @@ Config::Config() {
         strcmp(doc.ElemName(), "INFOCOLOR") &&
         strcmp(doc.ElemName(), "WARNCOLOR") &&
         strcmp(doc.ElemName(), "ERRORCOLOR") &&
-        strcmp(doc.ElemName(), "KEYMAPSTYLE")) {
+        strcmp(doc.ElemName(), "KEYMAPSTYLE") &&
+        strcmp(doc.ElemName(), "SOUNDOUTPUT")) {
       Trace::Log("CONFIG", "Found unknown config parameter \"%s\", skipping...",
                  doc.ElemName());
       validElem = false;
